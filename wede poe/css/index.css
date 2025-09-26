@@ -1,0 +1,146 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-snap-type:y mandatory;
+    /* scroll-padding-top: 50px; */
+    overflow-x:hidden;
+}
+.layer2{
+    animation: fadeIn 4s forwards;
+}
+
+/*navBar*/
+#navbar{
+    /* animation: fadeIn 8s; */
+    background-color: inherit;
+    z-index: 20;
+}
+.navButton:hover{
+    background-color: #ffd21c;
+}
+.navButton:hover{
+    color: rgb(0, 0, 0);
+}
+.navButton{
+   background: inherit;
+   border: none;
+   width: 80px; 
+   padding:0 10px;
+   transition: 1s;
+   color: rgb(255, 255, 255);
+   height: 100%;
+}
+
+body >div > div{
+    scroll-snap-align: start none;
+    scroll-snap-stop: always;
+}
+
+.colShift{
+    animation:changeCol 2s alternate-reverse infinite both;
+}
+
+@keyframes changeCol {
+    0%{
+        background-color: rgb(185, 185, 185);
+    }
+    100%{
+        background-color: rgb(26, 26, 26);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.head{
+    overflow: hidden;
+}
+  
+.head h1 {
+    animation: 2s slideIn 1s forwards;
+    transform:translateY(500%);
+}
+  
+@keyframes slideIn {
+    100%{
+        text-shadow: 5px 3px 1px rgb(255, 220, 22);
+    }
+    to {
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideY{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideX{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideUp{
+    overflow: hidden;
+}
+/* .intro-slide{
+
+} */
+.slideUp p {
+    transform:translateY(500%);
+    animation: slideY 2s ease forwards;
+}
+
+.slideDown{
+    overflow: hidden;
+}
+.slideDown img{
+    transform:translateY(-500%);
+    animation: slideY 1.5s ease forwards;
+}
+
+.slideRight{
+    overflow: hidden;
+}
+.slideRight p{
+    transform:translateX(-500%);
+    animation: slideX 2s ease forwards;
+}
+.slideRight ul{
+    transform:translateX(-500%);
+    animation: slideX 2s ease forwards;
+}
+
+.slideLeft{
+    overflow: hidden;
+}
+.slideLeft p{
+    transform:translateX(500%);
+    animation: slideX 2s ease forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 3s;
+}

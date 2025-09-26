@@ -1,0 +1,17 @@
+input{
+    border: none;
+    border-bottom: 1px solid black; 
+    outline: none;
+}
+textarea::placeholder{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    border: none;
+    line-height: 3ch;
+    background-image: linear-gradient(transparent, transparent calc(3ch - 1px), #000000 0px);
+    background-size: 100% 3ch;
+    resize: none;
+    overflow: hidden;
+}
