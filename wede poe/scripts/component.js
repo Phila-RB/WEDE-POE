@@ -1,3 +1,4 @@
+//html template
 let navbarHtml =
 `
     <div id="navbar" style="position:fixed; top: 0; right: 0; left: 0;height: 50px; display: flex; justify-content:space-between; align-content: center; background-color: rgb(0, 0, 0);">
@@ -296,12 +297,25 @@ let navbarHtml =
         <a href="index.html"><button class="navButton">Home</button></a>
         </div>
         <div style="display: flex; flex:1 1 0; justify-content: right;">
-        <a href="about.html"><button class="navButton">About</button></a>
-        <a href="#"><button class="navButton">Services</button></a>
-        <a href="contact.html"><button class="navButton">Contact</button></a>
+            <a href="about.html"><button class="navButton">About</button></a>
+                <div id="serv"  style="margin: 0; padding: 0;">
+                    <a href="service.html" style="position: relative;">
+                        <button id="servBut" class="navButton">Services</button>
+                    </a>
+                    <!--search services-->
+                    <ul id="servList" style="position: absolute; color: white; list-style: none; padding-left: 0; margin:0; visibility: hidden; background-color: #ffd21c;">
+                        <li><a href="service.html#Individual_counseling"><button class="navButton">individual Counseling</button></a></li>
+                        <li style="margin-top: 20px; "><a href="service.html#Trauma_counseling"><button class="navButton">Trauma counseling</button></a></li>
+                        <li style="margin-top: 20px; margin-bottom: 20px;"><a href="service.html#Addiction_counseling"><button class="navButton">Addiction counseling</button></a></li>
+                    </ul>
+                </div>
+            <a href="contact.html"><button class="navButton">Contact</button></a>
+            <a href="enquiry.html"><button class="navButton">Enquire</button></a>
         </div>
     </div>
 `
+
+//footer template
 
 let footerHtml =
 `   

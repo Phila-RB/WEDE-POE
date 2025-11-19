@@ -144,3 +144,10 @@ body >div > div{
 .fadeIn {
     animation: fadeIn 3s;
 }
+
+.imgH:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+    transition: 0.5s;
+    z-index: 5;
+}

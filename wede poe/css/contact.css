@@ -3,6 +3,11 @@ input{
     border-bottom: 1px solid black; 
     outline: none;
 }
+#submitBut{
+    border: 1px solid black;
+    padding: 5px;
+    outline:auto;
+}
 textarea::placeholder{
     font-family:Arial, Helvetica, sans-serif;
 }
